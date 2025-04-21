@@ -2,6 +2,7 @@ name: ci-golang-workflow
 on: [push]
 jobs:
   check-application:
+    name: Run Go Tests
     runs-on: ubuntu-latest
     strategy:
       matrix:
