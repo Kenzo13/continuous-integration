@@ -1,7 +1,8 @@
 name: ci-golang-workflow
-on: [push]
+on: [push, pull_request]
+
 jobs:
-  check-application:
+  build:
     name: Run Go Tests
     runs-on: ubuntu-latest
     strategy:
